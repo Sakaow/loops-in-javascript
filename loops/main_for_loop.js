@@ -6,6 +6,13 @@ const initApp = async () => {
     getPostsSerialized(ids);
 }
 
+// using forEach to iterate through the data "BAD"
+const useForEach = (ids) => {
+    ids.forEach(id => {
+        console.log(id);
+    })
+}
+
 // event listeners 
 document.addEventListener('DOMContentLoaded', initApp);
 
